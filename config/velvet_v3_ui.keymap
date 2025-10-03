@@ -24,75 +24,15 @@
     combos {
         compatible = "zmk,combos";
 
-        LPar {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <4 5>;
-            layers = <0 7>;
-        };
-
-        RPar {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <6 7>;
-            layers = <0 7>;
-        };
-
-        LSqBr {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 17>;
-            layers = <0 7>;
-        };
-
-        RSqBr {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <18 19>;
-            layers = <0 7>;
-        };
-
-        LFigBr {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <28 29>;
-            layers = <0 7>;
-        };
-
-        RFigBr {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <30 31>;
-            layers = <0 7>;
-        };
-
-        UScope {
-            bindings = <&kp UNDER>;
-            key-positions = <7 8>;
-            layers = <0 7>;
-        };
-
-        Pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <8 9>;
-            layers = <0 7>;
-        };
-
-        DblQ {
-            bindings = <&kp SINGLE_QUOTE>;
+        WinTabsBack {
+            bindings = <&kp LA(LS(TAB))>;
             key-positions = <16 15>;
             layers = <0 7>;
         };
 
-        SingQ {
-            bindings = <&kp DOUBLE_QUOTES>;
+        WinTabs {
+            bindings = <&kp LA(TAB)>;
             key-positions = <19 20>;
-            layers = <0 7>;
-        };
-
-        Plus {
-            bindings = <&kp PLUS>;
-            key-positions = <4 3>;
-            layers = <0 7>;
-        };
-
-        Minus {
-            bindings = <&kp MINUS>;
-            key-positions = <3 2>;
             layers = <0 7>;
         };
     };
