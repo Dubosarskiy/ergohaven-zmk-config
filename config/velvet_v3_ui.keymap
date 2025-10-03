@@ -73,13 +73,13 @@
         };
 
         DblQ {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <16 15>;
             layers = <0 7>;
         };
 
         SingQ {
-            bindings = <&kp SINGLE_QUOTE>;
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <19 20>;
             layers = <0 7>;
         };
@@ -113,10 +113,10 @@
 
         nav {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&trans  &trans  &trans    &trans   &trans   &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
-&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
-                &trans    &trans   &trans   &trans   &trans    &trans  &mo 3     &trans        &trans         &trans
+&trans          &kp F1    &kp F2       &kp F3         &kp F4   &kp F5                                         &kp F6         &kp F7    &kp F8   &kp F9      &kp F10    &trans
+&kp TAB         &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LEFT_CONTROL                               &kp RWIN       &kp LEFT  &kp UP   &kp DOWN    &kp RIGHT  &kp TAB
+&kp LEFT_SHIFT  &kp N1    &kp N2       &kp N3         &kp N4   &kp N5                                         &kp N6         &kp N7    &kp N8   &kp N9      &kp N0     &kp RIGHT_SHIFT
+                          &trans       &trans         &trans   &trans            &trans    &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans    &kp INS  &kp DELETE
             >;
 
             display-name = "Navigation";
@@ -146,10 +146,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 5   &mkp MB3  &mkp MB2  &mkp MB1  &mo 6                       &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &trans
-&trans  &trans  &trans    &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &mkp MB2  &mo 5   &mkp MB1    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans    &trans  &trans    &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 5   &mkp MB3  &trans  &trans    &mo 6                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans  &trans    &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+                &trans    &trans  &mkp MB2  &mkp MB1  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Mouse";
