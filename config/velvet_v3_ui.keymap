@@ -35,6 +35,36 @@
             key-positions = <19 20>;
             layers = <0 7>;
         };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <1 19>;
+            layers = <1>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <19 2>;
+            layers = <1>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <19 3>;
+            layers = <1>;
+        };
+
+        f4 {
+            bindings = <&kp F4>;
+            key-positions = <19 4>;
+            layers = <1>;
+        };
+
+        f5 {
+            bindings = <&kp F5>;
+            key-positions = <19 5>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -53,10 +83,10 @@
 
         nav {
             bindings = <
-&trans          &kp F1    &kp F2       &kp F3         &kp F4   &kp F5                                         &kp F6         &kp F7    &kp F8   &kp F9      &kp F10    &trans
-&kp TAB         &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LEFT_CONTROL                               &kp RWIN       &kp LEFT  &kp UP   &kp DOWN    &kp RIGHT  &trans
-&kp LEFT_SHIFT  &kp N1    &kp N2       &kp N3         &kp N4   &kp N5                                         &kp N6         &kp N7    &kp N8   &kp N9      &kp N0     &kp RIGHT_SHIFT
-                          &trans       &trans         &trans   &trans            &trans    &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans    &kp INS  &kp DELETE
+&trans          &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                &kp N6         &kp N7    &kp N8       &kp N9         &kp N0     &trans
+&kp TAB         &trans  &trans  &trans  &trans  &kp F20                               &kp F20        &kp LEFT  &kp UP       &kp DOWN       &kp RIGHT  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans                                &trans         &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &kp RIGHT_SHIFT
+                        &trans  &trans  &trans  &trans   &trans    &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans    &kp INS      &kp DELETE
             >;
 
             display-name = "Navigation";
