@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         WinTabsBack {
-            bindings = <&kp LG(LS(TAB))>;
+            bindings = <&kp RG(RS(TAB))>;
             key-positions = <16 17>;
             layers = <0 7 1>;
         };
