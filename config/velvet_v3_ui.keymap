@@ -21,67 +21,17 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        WinTabsBack {
-            bindings = <&kp RG(RS(TAB))>;
-            key-positions = <16 17>;
-            layers = <0 7 1>;
-        };
-
-        WinTabs {
-            bindings = <&kp RG(TAB)>;
-            key-positions = <19 18>;
-            layers = <0 7 1>;
-        };
-
-        BrSLeft {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <4 3>;
-            layers = <0 7 1>;
-        };
-
-        BrSRight {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <7 8>;
-            layers = <0 7 1>;
-        };
-
-        BrRLeft {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <15 16>;
-            layers = <0 7 1>;
-        };
-
-        BrRRight {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <19 20>;
-            layers = <0 7 1>;
-        };
-
-        BrFLeft {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <27 28>;
-            layers = <0 7 1>;
-        };
-
-        BrFRight {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <31 32>;
-            layers = <0 7 1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
 
         qwerty {
             bindings = <
-&kp ESC    &kp Q             &kp W               &kp E               &kp R             &kp T                                    &kp Y  &kp U            &kp I      &kp O                &kp P                 &kp BSPC
-&kp TAB    &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &kp D               &mt LEFT_ALT F    &kp G                                    &kp H  &mt RIGHT_ALT J  &kp K      &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMI  &kp SINGLE_QUOTE
-&kp LSHFT  &kp Z             &kp X               &kp C               &kp V             &kp B                                    &kp N  &kp M            &kp COMMA  &kp DOT              &kp SLASH             &kp RSHFT
-                             &kp LALT            &kp LA(LEFT_SHIFT)  &kp LEFT_CONTROL  &mo 1  &kp SPACE    &mt RIGHT_WIN ENTER  &mo 2  &mo 4            &to 7      &kp RIGHT_ALT
+&kp ESC    &kp Q  &kp W             &kp E               &kp R             &mt LEFT_BRACKET T                                        &mt RIGHT_BRACKET Y      &kp U            &kp I                &kp O              &kp P          &kp BSPC
+&kp TAB    &kp A  &mt LEFT_SHIFT S  &mt LEFT_CONTROL D  &mt LEFT_ALT F    &mt LEFT_PARENTHESIS G                                    &mt RIGHT_PARENTHESIS H  &mt RIGHT_ALT J  &mt RIGHT_CONTROL K  &mt RIGHT_SHIFT L  &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LSHFT  &kp Z  &kp X             &kp C               &kp V             &mt LEFT_BRACE B                                          &mt RIGHT_BRACE N        &kp M            &kp COMMA            &kp DOT            &kp SLASH      &kp RSHFT
+                  &kp LALT          &kp LA(LEFT_SHIFT)  &kp LEFT_CONTROL  &mo 1                   &kp SPACE    &mt RIGHT_WIN ENTER  &mo 2                    &mo 4            &to 7                &kp RIGHT_ALT
             >;
 
             display-name = "Base";
