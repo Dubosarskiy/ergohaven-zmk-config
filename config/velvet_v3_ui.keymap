@@ -53,7 +53,7 @@
 &kp F1    &kp F2      &kp F3          &kp F4            &kp F5        &kp F6                       &kp F7     &kp F8         &kp F9             &kp F10          &kp F11        &kp F12
 &kp HOME  &kp DELETE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LC(C)                    &kp LC(V)  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp BACKSPACE  &kp END
 &trans    &trans      &kp PAGE_DOWN   &kp PAGE_UP       &kp INSERT    &kp LC(X)                    &trans     &trans         &trans             &trans           &trans         &trans
-                      &trans          &trans            &trans        &mo 3      &trans    &trans  &trans     &mo 4          &to 7              &trans
+                      &trans          &trans            &trans        &mo 1      &trans    &trans  &trans     &mo 4          &to 7              &trans
             >;
 
             display-name = "Symbols";
@@ -62,7 +62,7 @@
         adj {
             bindings = <
 &bootloader  &none  &trans  &trans  &trans  &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &trans  &trans  &trans  &trans                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
+&none        &kp A  &trans  &trans  &trans  &trans                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
 &none        &none  &trans  &trans  &trans  &trans                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
                     &none   &none   &none   &none   &none    &none  &none         &none         &none             &none
             >;
@@ -105,10 +105,10 @@
 
         colemak-dh {
             bindings = <
-&kp ESC    &kp Q  &kp W         &kp F   &kp P             &kp B                                    &kp J  &kp L  &kp U      &kp Y          &kp SEMI  &kp BACKSPACE
-&kp TAB    &kp A  &kp R         &kp S   &kp T             &kp G                                    &kp M  &kp N  &kp E      &kp I          &kp O     &kp SINGLE_QUOTE
-&kp LSHFT  &kp Z  &kp X         &kp C   &kp D             &kp V                                    &kp K  &kp H  &kp COMMA  &kp DOT        &kp FSLH  &kp RSHFT
-                  &kp LEFT_ALT  &trans  &kp LEFT_CONTROL  &mo 1  &kp SPACE    &mt RIGHT_WIN ENTER  &mo 2  &mo 4  &to 0      &kp RIGHT_ALT
+&kp ESC    &kp Q  &kp W             &kp F               &kp P             &mt LEFT_BRACKET B                                        &mt RIGHT_BRACKET J      &kp L            &kp U                &kp Y              &kp SEMI  &kp BACKSPACE
+&kp TAB    &kp A  &mt LEFT_SHIFT R  &mt LEFT_CONTROL S  &mt LEFT_ALT T    &mt LEFT_PARENTHESIS G                                    &mt RIGHT_PARENTHESIS M  &mt RIGHT_ALT N  &mt RIGHT_CONTROL E  &mt RIGHT_SHIFT I  &kp O     &kp SINGLE_QUOTE
+&kp LSHFT  &kp Z  &kp X             &kp C               &kp D             &mt LEFT_BRACE V                                          &mt RIGHT_BRACE K        &kp H            &kp COMMA            &kp DOT            &kp FSLH  &kp RSHFT
+                  &kp LEFT_ALT      &trans              &kp LEFT_CONTROL  &mo 1                   &kp SPACE    &mt RIGHT_WIN ENTER  &mo 2                    &mo 4            &to 0                &kp RIGHT_ALT
             >;
 
             display-name = "User0";
@@ -145,6 +145,15 @@
             >;
 
             display-name = "User3";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        nav {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
