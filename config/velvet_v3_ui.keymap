@@ -49,7 +49,7 @@
             display-name = "Base";
         };
 
-        colemak-dh {
+        colemak {
             bindings = <
 &kp ESC    &kp Q  &kp W             &kp F               &kp P             &mt LEFT_BRACKET B                                        &mt RIGHT_BRACKET J      &kp L            &kp U                &kp Y              &kp SEMI  &kp BACKSPACE
 &kp TAB    &kp A  &mt LEFT_SHIFT R  &mt LEFT_CONTROL S  &mt LEFT_ALT T    &mt LEFT_PARENTHESIS G                                    &mt RIGHT_PARENTHESIS M  &mt RIGHT_ALT N  &mt RIGHT_CONTROL E  &mt RIGHT_SHIFT I  &kp O     &kp SINGLE_QUOTE
