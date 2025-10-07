@@ -134,9 +134,9 @@
 
         fn {
             bindings = <
-&kp F1    &kp F2      &kp F3          &kp F4            &kp F5        &kp F6                    &kp F7  &kp F8         &kp F9             &kp F10          &kp F11        &kp F12
-&kp HOME  &kp DELETE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans                    &trans  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp BACKSPACE  &kp END
-&trans    &trans      &kp PAGE_DOWN   &kp PAGE_UP       &kp INSERT    &trans                    &trans  &trans         &trans             &trans           &trans         &trans
+&trans    &trans      &kp F6          &kp F5            &kp F4        &kp F3                    &kp F9  &kp F10        &kp F11            &kp F12          &trans         &trans
+&kp HOME  &kp DELETE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp F2                    &kp F8  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp BACKSPACE  &kp END
+&trans    &trans      &kp PAGE_DOWN   &kp PAGE_UP       &kp INSERT    &kp F1                    &kp F7  &kp C_AC_UNDO  &kp C_AC_REDO      &trans           &trans         &trans
                       &trans          &trans            &trans        &mo 4   &trans    &trans  &trans  &mo 6          &to 1              &trans
             >;
 
